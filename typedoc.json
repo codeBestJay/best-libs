@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["./packages/index.ts"],
+  "out": "./docs",
+  "exclude": ["**/node_modules/**"],
+  "includes": "./packages/**/*.ts",
+  "excludeExternals": true,
+  "excludePrivate": true,
+  "excludeProtected": true
+}

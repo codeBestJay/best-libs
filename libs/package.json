@@ -1,0 +1,42 @@
+{
+  "name": "@best/libs",
+  "version": "0.0.1",
+  "main": "cjs/package/index.js",
+  "module": "es/packages/index.js",
+  "typings": "es/index.d.ts",
+  "scripts": {
+    "build": "vite build",
+    "build:umd": "vite build --mode umd",
+    "preview": "vite preview",
+    "doc": "typedoc --options typedoc.json",
+    "start:dev": "vite --mode dev",
+    "release": "node scripts/index.cjs"
+  },
+  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@sentry/react": "^7.84.0",
+    "@sentry/tracing": "^7.84.0",
+    "@stomp/stompjs": "^7.0.0",
+    "axios": "^1.6.2",
+    "bignumber.js": "^9.1.2",
+    "dayjs": "^1.11.10",
+    "qs": "^6.11.2",
+    "sockjs-client": "^1.6.1"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0",
+    "vite-plugin-dts": "^3.6.4",
+    "@types/node": "^20.10.2",
+    "@types/qs": "^6.9.10",
+    "@types/sockjs-client": "^1.5.4",
+    "fast-glob": "^3.3.2",
+    "prop-types": "^15.8.1",
+    "rollup": "^4.6.1",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-visualizer": "^5.9.3",
+    "typedoc": "^0.25.4",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.4",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "libs",
+    "noImplicitAny": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react-jsx",
+    "declaration": true,
+    "declarationDir": "libs",
+    "emitDeclarationOnly": true,
+    "moduleResolution": "Node"
+  },
+  "include": [
+    "*.d.ts",
+    "packages"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

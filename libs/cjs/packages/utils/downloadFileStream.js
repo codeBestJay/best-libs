@@ -1,0 +1,1 @@
+"use strict";const o=require("./blobToJson.js"),i=require("./downloadFileUrl.js");async function n(r,t){try{if(r){const e=await r();if((e==null?void 0:e.type)==="application/json"){const{msg:s}=await o(e);return Promise.reject(s)}else return await i(URL.createObjectURL(e),t),Promise.resolve(null)}else new Error("请传入request获取文件流")}catch{return Promise.reject()}}module.exports=n;
